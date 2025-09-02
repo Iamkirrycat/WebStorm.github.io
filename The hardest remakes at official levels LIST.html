@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The hardest remakes at official levels list</title>
+    <link rel="icon" href="Icon.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .header {
+            width: 100%;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.7);
+            border-bottom: 4px solid;
+            border-image: linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+            border-image-slice: 1;
+        }
+        
+        h1 {
+            font-size: 2.8em;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 400% 400%;
+            animation: rainbow 3s ease infinite;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            margin-top: 5px;
+            background: linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 4s ease infinite;
+        }
+        
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .content {
+            margin-top: 50px;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .level-list {
+            list-style: none;
+            padding: 0;
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .level-item {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid;
+            border-image: linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+            border-image-slice: 1;
+            text-align: left;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .level-item:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .level-info {
+            flex-grow: 1;
+        }
+        
+        .difficulty {
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 2s ease infinite;
+        }
+        
+        .level-links {
+            display: flex;
+            gap: 10px;
+            margin-left: 20px;
+        }
+        
+        .link-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .link-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Top the most difficult remakes</h1>
+        <div class="subtitle">at official levels list</div>
+    </div>
+    
+    <div class="content">
+        <ul class="level-list">
+            <li class="level-item">
+                <div class="level-info">
+                    <span class="difficulty">Extreme Demon</span> - Stereo Extremeness by Vortrox
+                </div>
+                <div class="level-links">
+                    <a href="https://demonlist.org/classic/530" target="_blank" class="link-btn">DL</a>
+                </div>
+            </li>
+            <li class="level-item">
+                <div class="level-info">
+                    <span class="difficulty">Extreme Demon</span> - Quantum Processing by Riot
+                </div>
+                <div class="level-links">
+                    <a href="https://demonlist.org/classic/558" target="_blank" class="link-btn">DL</a>
+                </div>
+            </li>
+            <li class="level-item">
+                <div class="level-info">
+                    <span class="difficulty">Extreme Demon</span> - Fingerdash V3 by Noriega
+                </div>
+                <div class="level-links">
+                    <a href="https://demonlist.org/classic/1113" target="_blank" class="link-btn">DL</a>
+                </div>
+            </li>
+            <li class="level-item">
+                <div class="level-info">
+                    <span class="difficulty">Insane Demon</span> - Deadlocked V2 by Small
+                </div>
+                <div class="level-links">
+                    <a href="https://insanedemonlist.com/level/58" target="_blank" class="link-btn">IDL</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
